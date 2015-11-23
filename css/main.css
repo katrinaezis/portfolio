@@ -1,0 +1,38 @@
+/*#screenFiller {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url(../images/img.jpg);
+    z-index: -1;
+}
+*/
+p{
+  text-align:center;
+}
+#topSection, html, body, #uiView, #kk{
+  height:100%;
+}
+
+.more {
+  display:block;
+  position:absolute;
+  bottom:20px;
+  text-align:center;
+}
+
+#topSection {
+	background-image: url(../images/header.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/*body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }*/

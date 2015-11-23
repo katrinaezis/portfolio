@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Spotify Template</title>
+		<link rel="icon" type="image/png" href="images/logo.png" />
+		<link href="css/main.css" type="text/css" rel="stylesheet"/>
+
+		<!-- Include libraries -->
+		<script src="https://code.jquery.com/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+		
+		<!-- Read scripts -->
+		<script src="js/portfolio.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	</head>
+	<body>
+		<div class="navbar-fixed">
+			<nav class="blue-grey">
+			    <div class="nav-wrapper container">
+			      <a ui-sref="home" class="brand-logo">ke</a>
+			      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a ui-sref="home">home</a></li>
+			        <li><a ui-sref="about">about</a></li>
+			        <li><a ui-sref="blog">blog</a></li>
+			      </ul>
+			    </div>
+		    </nav>
+		</div>
+	    <!-- <div id="topSection">
+		  <p>This content takes up 100% of the viewport at the top</p>
+		  <a href="#" class="more">Learn More</a>
+		</div>
+		<div class="bottom-section">
+		  <p>This is the body content, and should appear just after the top section <strong>only when you scroll down</strong>.</p>
+		</div> -->
+		<div id="kk">
+			<!-- This is where your content will display -->
+			<div id="uiView" ui-view></div>
+		</div>
+		<footer class="page-footer blue-grey">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+	</body>
+</html>
