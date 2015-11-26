@@ -8,7 +8,8 @@
 p{
   text-align:center;
 }
-#topSection, html, body, #uiView, #kk{
+
+/*#topSection, html, body, #uiView, #kk{
   height:100%;
 }
 
@@ -25,6 +26,70 @@ p{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
+}*/
+
+
+.projectImage {
+	max-height: 250px;
+	-vendor-animation-duration: 5s;
+	/*margin: auto;
+	display: block;*/
+	/*make the images smaller on smaller
+	screen sizes so they scale as the user changes
+	view*/
+
+}
+
+#recent {
+	color: white;
+}
+
+#projects > #title {
+	margin: 0px;
+}
+
+#full-img {
+	background-image: url(../images/header2.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	margin-bottom: 0px;
+}
+
+#titles {
+	padding: 7%;
+}
+
+
+/*.projectImage:hover {
+	max-height: 275px;
+}*/
+
+.project {
+	/*display: inline-block;
+	margin: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;*/
+	display: inline-block;
+	margin: auto;
+	height: 350px;
+	width: 350px;
+	margin: 4%;
+	padding: 1%;
+}
+
+.eachProject {
+	margin: auto;
+	display: block;
+}
+
+#recentWork {
+	padding: 1%;
+	text-align: center;
 }
 
 /*body {

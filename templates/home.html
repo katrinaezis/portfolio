@@ -1,14 +1,30 @@
-<div id="topSection">
+<!-- <div id="topSection">
   <p>This content takes up 100% of the viewport at the top</p>
   <a href="#" class="more">Learn More</a>
 </div>
 
 <div class="bottom-section">
   <p>This is the body content, and should appear just after the top section <strong>only when you scroll down</strong>.</p>
+</div> -->
+<div id="full-img" infinite-scroll='animateProjects()'>
+	<section id="titles">
+		<h1 id="name" class="text-center animated fadeInUp">katrina ezis</h1>
+		<h2 class="second text-center animated fadeInUpBig">developer. designer.</h2>
+		<h2 id="third" class="text-center animated fadeInUpBig">pretty darn cool.</h2>
+	</section>
 </div>
-<div>
-	<div ng-repeat="x in projects">
-		<p>hello</p>
+<div id="projects">
+	<div id="title" class="card-panel teal lighten-2">
+		<h3 id="recent" class="text-center">recent work</h3>
+		<h6 class="text-center">click on a logo for a preview</h6>
+
+	</div>
+	<div id="recentWork" class="container">
+		<div class="project" ng-repeat="project in projects"  ng-click="projectClick(project)">
+			<div class="eachProject" id="{{project['id']}}"  ng-mouseover="hoverIn(project)" ng-mouseleave="hoverOut(project)" myChange>
+				<img ng-show="show" class="projectImage" ng-src="images/{{project['logo']}}">
+				<img ng-hide="hide" class="projectImage" ng-src="images/{{project['logo-grey']}}" myChange>
+			</div>
+		</div>
 	</div>
 </div>
-<div>This is my about: {{about}}</div>

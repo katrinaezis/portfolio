@@ -5,34 +5,45 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Spotify Template</title>
+		<title>Katrina Ezis</title>
 		<link rel="icon" type="image/png" href="images/logo.png" />
 		<link href="css/main.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/animate.css">
 
 		<!-- Include libraries -->
+
+		<!-- jQuery, bootstrap -->
 		<script src="https://code.jquery.com/jquery.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
-		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 
-		<!-- Compiled and minified JavaScript -->
+		<!-- Materialize -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+		<!-- Angular, Angular Router, Angular Animation -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-animate.js"></script>
+		<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/ngInfiniteScroll/1.2.1/ng-infinite-scroll.js'></script>
+
+
+	<!-- 	// <script src="angular.js"></script>
+		// <script src="angular-animate.js"></script> -->
 		
 		<!-- Read scripts -->
 		<script src="js/portfolio.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		
 	</head>
 	<body>
 		<div class="navbar-fixed">
-			<nav class="blue-grey">
+			<nav class="white">
 			    <div class="nav-wrapper container">
-			      <a ui-sref="home" class="brand-logo">ke</a>
+			      <a ui-sref="home" class="teal-text lighten-4-text" class="brand-logo">ke</a>
 			      <ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a ui-sref="home">home</a></li>
-			        <li><a ui-sref="about">about</a></li>
-			        <li><a ui-sref="blog">blog</a></li>
+			        <li><a class="teal-text lighten-4-text" ui-sref="home">home</a></li>
+			        <li><a class="teal-text lighten-4-text" ui-sref="about">about</a></li>
+			        <li><a class="teal-text lighten-4-text" ui-sref="blog">blog</a></li>
 			      </ul>
 			    </div>
 		    </nav>
@@ -48,7 +59,7 @@
 			<!-- This is where your content will display -->
 			<div id="uiView" ui-view></div>
 		</div>
-		<footer class="page-footer blue-grey">
+		<footer class="page-footer teal lighten-2">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
