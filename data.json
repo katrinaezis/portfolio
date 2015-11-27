@@ -1,6 +1,0 @@
-[{"NAME":"Pocket Hipster", "URL":"http://pocket-hipster.herokuapp.com/", "logo":"pocket-logo.png", "logo-grey":"pocket-logo-grey.png", "id":"pocket"},
-{"NAME":"Dawg Coffee", "URL":"http://students.washington.edu/kezis/info343/dawg-coffee/", "logo":"dawg-logo.png", "logo-grey":"dawg-logo-grey.png",  "id":"dawg"},
-{"NAME":"Review a Hipster", "URL":"http://students.washington.edu/kezis/info343/CRUD/", "logo":"CRUD-logo.png", "logo-grey":"CRUD-logo-grey.png", "id":"crud"},
-{"NAME":"You've Probably Never Heard of Them", "URL":"http://students.washington.edu/kezis/info343/SpotifyChallenge/Spotify/", "logo":"spotify-logo.png", "logo-grey":"spotify-logo-grey.png", "id":"spotify"},
-{"NAME":"Police Shooting", "URL":"http://students.washington.edu/kezis/info343/police-shooting/", "logo":"Police-logo.png", "logo-grey":"police-logo-grey.png", "id":"police"},
-{"NAME":"ASCII Animation", "URL":"http://students.washington.edu/kezis/cse154/ASCII-mation/ascii.html", "logo":"ASCII-logo.png", "logo-grey":"ASCII-logo-grey.png", "id":"ASCII"}]

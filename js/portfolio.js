@@ -29,7 +29,7 @@ myApp.config(function($stateProvider) {
 
 myApp.controller('HomeController', function($scope, $http){
 	console.log("sup");
-	$http.get('data.json').success(function(data){
+	$http.get('data/data.json').success(function(data){
       console.log(data);
       $scope.projects = data;
     });
