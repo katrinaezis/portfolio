@@ -5,28 +5,24 @@
     z-index: -1;
 }
 */
+
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300|Open+Sans:300|Raleway:400,100,300);
+/*
+font-family: 'Muli', sans-serif;
+
+font-family: 'Open Sans', sans-serif;
+
+font-family: 'Raleway', sans-serif;
+*/
+
+
 p{
   text-align:center;
 }
 
-/*#topSection, html, body, #uiView, #kk{
-  height:100%;
+#navLogo {
+	max-width: 200px;
 }
-
-.more {
-  display:block;
-  position:absolute;
-  bottom:20px;
-  text-align:center;
-}
-
-#topSection {
-	background-image: url(../images/header.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-}*/
 
 
 .projectImage {
@@ -40,6 +36,32 @@ p{
 
 }
 
+#me {
+	width: 300px;
+	height: 300px;
+	margin-right: 10%;
+}
+
+nav ul a:hover {
+	text-decoration: none;
+}
+
+#subtitles {
+	animation: fadeInUp .6s .5s ease both;
+	position: absolute;
+	margin: 5% auto;
+	margin-top: 0px;
+	left: 0;
+	right: 0;
+}
+
+.head {
+	margin-top: 0;
+	display: block;
+	text-align: center;
+	animation: fadeInUp .6s .5s ease both;
+}
+
 #recent {
 	color: white;
 }
@@ -48,8 +70,25 @@ p{
 	margin: 0px;
 }
 
+#logoTop {
+	margin-top: 5%;
+	margin-bottom: 0px;
+	animation: fadeInUp .6s .5s ease both;
+}
+
+#titles {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+#push {
+	padding: 10%;
+	animation: fadeInUp .6s .5s ease both;
+}
+
 #full-img {
-	background-image: url(../images/header2.jpg);
+	background-image: url(../images/header4.jpg);
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -57,16 +96,78 @@ p{
 	background-size: cover;
 	color: white;
 	margin-bottom: 0px;
+
+}
+
+#thanks {
+	background-image: url(../images/thankyou.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	/*color: #0288d1;*/
+	color: white;
+	margin-bottom: 0px;
+}
+
+#aboutHeading {
+	background-image: url(../images/header.jpg);
+	height: 75vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	margin-bottom: 0px;
+	padding: 10%;
+}
+
+#aboutContent {
+	padding: 3%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#aboutWords {
+	width: 90%;
 }
 
 #titles {
 	padding: 7%;
 }
 
+#get {
+	margin-bottom: 3%;
+}
 
-/*.projectImage:hover {
-	max-height: 275px;
-}*/
+#contactForm {
+	margin-top: 10%;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+	color: #0288d1 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #0288d1 !important;
+	box-shadow: 0 1px 0 0 #0288d1 !important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+	border-bottom: 1px solid #0288d1 !important;
+	box-shadow: 0 1px 0 0 #0288d1 !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+	border-bottom: 1px solid #0288d1 !important;
+	box-shadow: 0 1px 0 0 #0288d1 !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+	color: #0288d1 !important;
+}
 
 .project {
 	/*display: inline-block;
@@ -75,7 +176,6 @@ p{
 	margin-left: auto;
 	text-align: center;*/
 	display: inline-block;
-	margin: auto;
 	height: 350px;
 	width: 350px;
 	margin: 4%;
@@ -85,6 +185,10 @@ p{
 .eachProject {
 	margin: auto;
 	display: block;
+}
+
+.page-footer {
+	margin-top: 0 !important;
 }
 
 #recentWork {
@@ -100,4 +204,4 @@ p{
 
   main {
     flex: 1 0 auto;
-  }*/
+  }

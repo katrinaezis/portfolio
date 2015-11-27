@@ -19,39 +19,26 @@ myApp.config(function($stateProvider) {
 			url: '/contact',
 			templateUrl: 'templates/contact.html',
 			controller: 'ContactController'
+		})
+		.state('thankyou', {
+			url: '/thankyou',
+			templateUrl: 'templates/thankyou.html',
+			controller: 'ThankyouController'
 		});
 });
 
 myApp.controller('HomeController', function($scope, $http){
-	// $scope.hide = false;
- //    $scope.show = false;
- //    $scope.identity = false;
 	console.log("sup");
 	$http.get('data.json').success(function(data){
       console.log(data);
       $scope.projects = data;
     });
 
-    // $scope.hoverIn = function(project) {
-    // 	console.log(project['id']);
-    // 	$scope.hide = true;
-    // 	$scope.show = true;
-    // 	$scope.identity = project['id'];
-    // 	// $scope.id = project
-    // 	//console.log(project['logo']);
-    // 	// console.log($scope.image);
-    // 	// $('.eachImage').css("background-color", "blue");
-    // 	// $(".eachImage").animate({width: '60%'}, "slow");
-    // 	//$('.projectImage').hide();
-    // }
-
-    // $scope.hoverOut = function(project) {
-    // 	// $scope.image = project['logo-grey'];
-    // 	// console.log($scope.image);
-    // 	$scope.hide = false;
-    // 	$scope.show = false;
-    // 	$scope.identity = project['id'];
-    // }
+    $scope.getProjectImage = function(project, hovering) {
+    	return hovering
+    		? 'images/' + project['logo']
+    		: 'images/' + project['logo-grey'];
+    };
 
     $scope.projectClick = function(project) {
 
@@ -63,34 +50,6 @@ myApp.controller('HomeController', function($scope, $http){
     }
 });
 
-myApp.directive('myChange', function() {
-	return function(scope, element, attrs, ctrl) {
-		element.bind('mouseover', function() {
-			console.log('scope is true');
-			element.hide = true;
-			element.show = true;
-		});
-		element.bind('mouseleave', function() {
-			console.log('scope is false');
-			element.hide = false;
-			element.show = false;
-		});
-	};
-});
-
-// myApp.directive('myChange', function() {
-// 	return function(scope, element) {
-// 		element.bind('mouseover', function() {
-// 			element.hide = true;
-// 			element.show = true;
-// 		});
-// 		element.bind('mouseleave', funciton() {
-// 			element.hide = false;
-// 			element.show = false;
-// 		});
-// 	};
-// });
-
 // About page controller: define $scope.about as a string
 myApp.controller('AboutController', function($scope){
 	$scope.about = 'string';
@@ -99,4 +58,8 @@ myApp.controller('AboutController', function($scope){
 // Content controller: define $scope.url as an image
 myApp.controller('ContactController', function($scope){
 	
+});
+
+myApp.controller('ThankyouController', function($scope){
+
 });
