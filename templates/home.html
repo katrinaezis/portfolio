@@ -1,25 +1,20 @@
-<!-- <div id="topSection">
-  <p>This content takes up 100% of the viewport at the top</p>
-  <a href="#" class="more">Learn More</a>
-</div>
+<!-- 
+	Katrina Ezis
+	Info-343
+	Personal Portfolio
+	November 23, 2015 
+	The home page that has my recent work-->
 
-<div class="bottom-section">
-  <p>This is the body content, and should appear just after the top section <strong>only when you scroll down</strong>.</p>
-</div> -->
 <div id="full-img" infinite-scroll='animateProjects()' ng-init="showSub=false" >
 	<section id="titles">
 		<img id="logoTop" src="images/Drawing.png">
-		<!-- <h1 id="name" class="text-center animated fadeInUp">katrina ezis</h1> -->
-		<!-- <div id="subtitles"  ng-hide="showSub">
-			<h2 class="second text-center">developer. designer.</h2>
-			<h4 id="third" class="text-center">pretty darn cool.</h2>
-		</div> -->
 	</section>
 </div>
 <div id="projects">
 	<div id="title" class="card-panel  light-blue darken-2">
 		<h3 id="recent" class="text-center">recent work</h3>
 	</div>
+	<!-- Shows colored images on hover -->
 	<div id="recentWork" class="container">
 		<div class="project" ng-repeat="project in projects" >
 			<div class="eachProject">

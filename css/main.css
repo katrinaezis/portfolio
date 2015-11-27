@@ -1,11 +1,10 @@
-/*#screenFiller {
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-image: url(../images/img.jpg);
-    z-index: -1;
-}
+/*
+	Katrina Ezis
+	Info-343
+	Personal Portfolio
+	November 23, 2015
+	CSS file. A little messy.
 */
-
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300|Open+Sans:300|Raleway:400,100,300);
 /*
 font-family: 'Muli', sans-serif;
@@ -87,9 +86,7 @@ nav ul a:hover {
 	animation: fadeInUp .6s .5s ease both;
 }
 
-#full-img {
-	background-image: url(../images/header4.jpg);
-	height: 100vh;
+#aboutHeading, #full-img, #thanks {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -97,29 +94,22 @@ nav ul a:hover {
 	color: white;
 	margin-bottom: 0px;
 
+}
+
+#full-img {
+	background-image: url(../images/header4.jpg);
+	height: 100vh;
 }
 
 #thanks {
 	background-image: url(../images/thankyou.jpg);
 	height: 100vh;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
 	/*color: #0288d1;*/
-	color: white;
-	margin-bottom: 0px;
 }
 
 #aboutHeading {
 	background-image: url(../images/header.jpg);
 	height: 75vh;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	color: white;
-	margin-bottom: 0px;
 	padding: 10%;
 }
 
@@ -149,32 +139,31 @@ nav ul a:hover {
 .input-field input[type=text]:focus + label {
 	color: #0288d1 !important;
 }
+
 /* label underline focus color */
 .input-field input[type=text]:focus {
 	border-bottom: 1px solid #0288d1 !important;
 	box-shadow: 0 1px 0 0 #0288d1 !important;
 }
+
 /* valid color */
 .input-field input[type=text].valid {
 	border-bottom: 1px solid #0288d1 !important;
 	box-shadow: 0 1px 0 0 #0288d1 !important;
 }
+
 /* invalid color */
 .input-field input[type=text].invalid {
 	border-bottom: 1px solid #0288d1 !important;
 	box-shadow: 0 1px 0 0 #0288d1 !important;
 }
+
 /* icon prefix focus color */
 .input-field .prefix.active {
 	color: #0288d1 !important;
 }
 
 .project {
-	/*display: inline-block;
-	margin: 5%;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;*/
 	display: inline-block;
 	height: 350px;
 	width: 350px;
@@ -195,13 +184,3 @@ nav ul a:hover {
 	padding: 1%;
 	text-align: center;
 }
-
-/*body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
