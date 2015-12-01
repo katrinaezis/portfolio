@@ -28,17 +28,14 @@ myApp.config(function($stateProvider) {
 		.state('about', {
 			url: '/about',
 			templateUrl: 'templates/about.html',
-			controller: 'AboutController'
 		})
 		.state('contact', {
 			url: '/contact',
 			templateUrl: 'templates/contact.html',
-			controller: 'ContactController'
 		})
 		.state('thankyou', {
 			url: '/thankyou',
 			templateUrl: 'templates/thankyou.html',
-			controller: 'ThankyouController'
 		});
 });
 
@@ -72,16 +69,4 @@ myApp.controller('HomeController', function($scope, $http){
     	$(".eachProject:odd").addClass("animated fadeInRightBig");
     	$(".eachProject:even").addClass("animated fadeInLeftBig");
     }
-});
-
-myApp.controller('AboutController', function($scope, $http) {
-
-});
-
-myApp.controller('ContactController', function($scope, $http) {
-
-});
-
-myApp.controller('ThankyouController', function($scope, $http) {
-
 });
