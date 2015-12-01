@@ -73,3 +73,15 @@ myApp.controller('HomeController', function($scope, $http){
     	$(".eachProject:even").addClass("animated fadeInLeftBig");
     }
 });
+
+myApp.controller('AboutController', function($scope, $http) {
+
+});
+
+myApp.controller('ContactController', function($scope, $http) {
+
+});
+
+myApp.controller('ThankyouController', function($scope, $http) {
+
+});
